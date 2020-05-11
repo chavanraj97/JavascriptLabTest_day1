@@ -2,18 +2,17 @@
     <head>
         <title>Third</title>
     </head>
-    <h1 id = "click"></h1>
-    <h2 id = "click1"></h2>
-    <h3 id = "click2"></h3>
-    <h4 id = "click3"></h4>
-    <h5 id = "click4"></h5>
+    <h1 class = "click"></h1>
+    <h2 class = "click"></h2>
+    <h3 class = "click"></h3>
+    <h4 class = "click"></h4>
+    <h5 class = "click"></h5>
 
     <script>
-        document.getElementById('click').innerHTML = "raj";
-        document.getElementById('click1').innerHTML = "raj";
-        document.getElementById('click2').innerHTML = "raj";
-        document.getElementById('click3').innerHTML = "raj";
-        document.getElementById('click4').innerHTML = "raj";
+        var x = document.getElementsByClassName("click");
+      for(var i = 0; i < 5; i++){
+        x[i].innerHTML = "Raj chavan"
+      }
         
     </script>
 </html>
